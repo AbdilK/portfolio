@@ -1,47 +1,31 @@
 <template>
   <v-app>
-    <v-app-bar 
-      app
-      flat
-      
-      
-    >
-    <NavBar/>
+    <v-app-bar flat max-height="65">
+      <Header />
     </v-app-bar>
 
-    <v-content>
-      <imageSlide/>
-      <imageGallery/>
-      <imageProjects/>
-    </v-content>
+    <router-view></router-view>
 
     <v-footer>
-      <Footer/>
+      <Footer />
     </v-footer>
   </v-app>
 </template>
 
-
 <script>
-import NavBar from './components/NavBar';
-import imageSlide from './components/imageSlide';
-import imageGallery from './components/imageGallery';
-import imageProjects from './components/imageProjects';
-import Footer from './components/Footer';
+import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    NavBar,
-    imageSlide,
-    imageGallery,
-    imageProjects,
+    Header,
     Footer
   },
 
   data: () => ({
     //
-  }),
+  })
 };
 </script>
