@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "imageGallery",
+  name: "myPhotos",
   data() {
     return {
       items: [

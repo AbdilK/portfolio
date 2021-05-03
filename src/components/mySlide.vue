@@ -11,12 +11,15 @@
         <v-row class="title fill-height hidden-xs-only" align="center" justify="center">{{ item.title }}</v-row>
       </v-carousel-item>
     </v-carousel>
+
   </div>
+  
 </template>
+
 
 <script>
 export default {
-  name: "Hero",
+  name: "mySlide",
   data() {
     return {
       items: [
