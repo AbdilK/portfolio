@@ -94,6 +94,7 @@ h6,
 
 p {
   margin: 0 0 1em;
+  color: #fff !important;
 }
 
 a {
@@ -137,6 +138,10 @@ a:hover {
   .block {
     padding: 20px 0;
   }
+}
+
+.block h3 {
+  color: white  !important;
 }
 
 .block h2 {
@@ -215,6 +220,10 @@ header .v-toolbar__title {
   header .v-toolbar__content {
     padding: 0;
   }
+}
+
+.v-toolbar__content {
+  background-color: #FFC400;
 }
 
 .mainHeader .v-toolbar__items .v-btn__content a {

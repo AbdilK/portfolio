@@ -1,7 +1,8 @@
 <template>
   <v-container>
     <v-toolbar flat class="mainHeader">
-      <v-toolbar-title>PORTFOLIO</v-toolbar-title>
+      <img class="navbar-logo" src="../../assets/images/newL.png" alt="AK LOGO">
+      <v-toolbar-title>ABDIL KOYCU</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
         <v-btn text><router-link to="/">Home</router-link></v-btn>

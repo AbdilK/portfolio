@@ -19,21 +19,23 @@
 
 <script>
 export default {
+  
   name: "mySlide",
   data() {
     return {
+      
       items: [
         {
           src: require("../assets/images/test1.png"),
-          title: "We are creative"
+          title: ""
         },
         {
           src: require("../assets/images/test1.png"),
-          title: "We are hard worker"
+          title: ""
         },
         {
           src: require("../assets/images/test1.png"),
-          title: "We are professional"
+          title: ""
         }
       ]
     };
