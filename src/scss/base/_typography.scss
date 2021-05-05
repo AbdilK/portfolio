@@ -51,10 +51,17 @@ p {
   color: #fff !important;
 }
 
+ul {
+    list-style-type: none;
+    
+}
+
+
 a {
   color: $base-link-color;
   text-decoration: none;
   transition: color $animation-speed ease;
+  color: inherit;
 
   &:hover {
     text-decoration: none;

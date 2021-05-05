@@ -97,11 +97,16 @@ p {
   color: #fff !important;
 }
 
+ul {
+  list-style-type: none;
+}
+
 a {
   color: #000;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  color: inherit;
 }
 
 a:hover {

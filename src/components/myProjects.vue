@@ -51,16 +51,17 @@ export default {
           src: require("../assets/images/oceanEye.png"),
           readMoreUrl: "http://www.akoycu.dk",
         },
-
         {
           id: 2,
-          title: "1. Semester eksamensprojekt",
-          subtitle: "Designmanual rapport",
+          title: "No way out",
+          subtitle: "8 minutters kortfilm",
           description:
-            "Ved siden af informations siden til første semester eksamen, skulle vi aflevere en rapport samt designmanual. Rapporten blev rigtig pæn, med et innovativt design. ",
-          src: require("../assets/images/designManual.jpg"),
-          readMoreUrl: "",
+            "På tredje semester skulle vi lave en kortfilm, hvor vi skulle benytte os af alle de ting vi har lært i AV - Productions faget. Kortfilmen blev til en gyser/thriller på 8 minutter.",
+          src: require("../assets/images/kortfilm.png"),
+          readMoreUrl: "https://www.youtube.com/watch?v=JEt7sPA1r4M",
         },
+
+        
         {
           id: 3,
           title: "Timeline Museum Logo contest",
@@ -81,12 +82,12 @@ export default {
         },
         {
           id: 5,
-          title: "No way out",
-          subtitle: "8 minutters kortfilm",
+          title: "1. Semester eksamensprojekt",
+          subtitle: "Designmanual rapport",
           description:
-            "På tredje semester skulle vi lave en kortfilm, hvor vi skulle benytte os af alle de ting vi har lært i AV - Productions faget. Kortfilmen blev til en gyser/thriller på 8 minutter.",
-          src: require("../assets/images/kortfilm.png"),
-          readMoreUrl: "https://www.youtube.com/watch?v=JEt7sPA1r4M",
+            "Ved siden af informations siden til første semester eksamen, skulle vi aflevere en rapport samt designmanual. Rapporten blev rigtig pæn, med et innovativt design. ",
+          src: require("../assets/images/designManual.jpg"),
+          readMoreUrl: "",
         },
         {
           id: 6,
