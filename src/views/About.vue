@@ -26,8 +26,10 @@
               ></v-img>
               <v-card-text class="text--primary text-center ">
                 <div class="title">{{ item.name }}</div>
-                <h4>{{ item.title }}</h4>
+                <a :href="item.URLLink">
+                <h4>{{ item.title }}</h4></a>  
               </v-card-text>
+
             </v-card>
           </v-col>
         </v-row>
@@ -59,45 +61,24 @@
         <v-row>
           <v-col v-for="contacts in contacts" :key="contacts.id" class="d-flex child-flex " cols="" sm="4"  >
             <v-card flat tile class="mx-auto amber accent-3 "  >
-              <v-img
-                :src="contacts.src"
-                aspect-ratio="1"
-                class="grey lighten-2"
-                
-              ></v-img>
               <v-card-text class="text--primary text-center ">
                 <div class="title">{{ contacts.name }}</div>
                 <h4>{{ contacts.title }}</h4>
+                <h4>{{ contacts.titles }}</h4>
               </v-card-text>
+              <v-card-actions>
+              <v-btn color="black" text :href="contacts.readMoreUrl" target="_blank"
+                >Læs mere</v-btn
+              >
+            </v-card-actions>
             </v-card>
           </v-col>
         </v-row>
       </v-container>
     </div>
-<div class="block">
-  <v-container class="text-center">
-    <h2 class="text-center">Kontakt information</h2>
-    <ul class="kontakt-content ">
-                <li>
-                    <a href="https://www.google.com/maps/place/Erhvervsakademi+SydVest/@55.4877012,8.4469108,15z/data=!4m2!3m1!1s0x0:0xf131cc5b28fe1f27?sa=X&amp;ved=2ahUKEwjA4urJps3tAhXlo4sKHdEbCZYQ_BIwDXoECBsQBQ" target="_blank"><i class="fa fa-map-marker"></i></a>
 
-                    <a href="https://www.google.com/maps/place/Erhvervsakademi+SydVest/@55.4877012,8.4469108,15z/data=!4m2!3m1!1s0x0:0xf131cc5b28fe1f27?sa=X&amp;ved=2ahUKEwjA4urJps3tAhXlo4sKHdEbCZYQ_BIwDXoECBsQBQ" target="_blank">
-                        <br>
-                        <u>Spangsbjerg Kirkevej 103, 6700 Esbjerg</u> </a>
-                </li>
-                <li>
-                    <a href="tel:+4542227612"></a>
-                    <br>
-                    <a href="tel:+4542227612"><u>+45 42 22 76 XX</u></a>
-                </li>
-                <li>
-                    <a href="mailto:ocean@eyes.com"><i class="fa fa-envelope"></i></a>
-                    <br>
-                    <a href="mailto:ocean@eyes.com">ak@akoycu.dk</a>
-                </li>
-            </ul>
-  </v-container>
-</div>
+    
+
   </v-content>
   
 </template>
@@ -114,37 +95,42 @@ export default {
           src: require("../assets/images/BusinessCard.png"),
           name: "Business Kort Design",
           title: "Klik her for at downloade",
+          URLLink: "../assets/images/BusinessCard.png"
         },
         {
           id: 1,
           src: require("../assets/images/abdilme.png"),
           name: "Abdil Koycu",
-          title: "Multimediedesigner",
+          titles: "Multimediedesigner",
         },
         {
           id: 1,
           src: require("../assets/images/CV.png"),
           name: "Curriculum Vitae (CV)",
           title: "Klik her for at downloade",
+          URLLink: "../assets/images/AbdilCV.pdf"
         },
       ],
       contacts: [
         {
           id: 1,
           
-          name: "Bopæl",
+          name: "ADDRESSE",
           title: "Spangsbjerg Kirkevej 103, 6700 Esbjerg",
+          readMoreUrl: "https://www.google.com/maps/place/Erhvervsakademi+SydVest/@55.4877012,8.4469108,15z/data=!4m2!3m1!1s0x0:0xf131cc5b28fe1f27?sa=X&amp;ved=2ahUKEwjA4urJps3tAhXlo4sKHdEbCZYQ_BIwDXoECBsQBQ"
         },
         {
           id: 2,
-          name: "Telefon nummer",
+          name: "TELEFON",
           title: "+45 42 22 76 XX",
+          readMoreUrl: "tel:+4542227612"
         },
         {
           id: 3,
          
-          name: "Mail",
+          name: "MAIL",
           title: "ak@akoycu.dk",
+          readMoreUrl: "mailto:AK@akoycu.dk"
         },
       ],
     };

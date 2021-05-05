@@ -3,7 +3,9 @@
     <v-container >
       <h2 class="text-center" amber accent-3>Photoshoot</h2>
       <h3 class="text-center" >Seneste photoshoot af Strandvejen i Hjerting. <br> 
-      Taget i forbindelse med et skoleprojekt, og som er blevet redigeret i Photoshop efterfølgende.</h3>
+      Taget i forbindelse med et skoleprojekt, og som efterfølgende er blevet redigeret i Photoshop.
+      <br>
+      Der er leget med kontrasten, lysforholdende, vejr ændringer og tilføjelser på græsset.</h3>
       <v-row>
         <v-col v-for="item in items" :key="item.id" class="d-flex child-flex" cols="6" sm="4">
           <v-card flat tile class="d-flex">

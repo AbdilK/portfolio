@@ -2,7 +2,13 @@
   <div class="block latestPostBlock">
     <v-container>
       <h2 class="text-center">Projects</h2>
+      <h3 class="text-center" >Vil du gerne se mere af mine projekter?<br> 
+      Jeg har samlet nogle af de bedste projekter, som jeg har arbejdet på under uddannelsen. 
+      <br>
+      Alt fra hjemmesider og logo design processer til video & kortfilm produktion.</h3>
+      <br>
       <v-row>
+        
         <v-col cols="4" v-for="item in items" :key="item.id">
           <v-card
             outlined
@@ -96,7 +102,7 @@ export default {
           description:
             "Ved udarbejdelsen af logo'et til vores første semester projekt, har vi været igennem en lang process. På billedet ses processen, hvilke overvejser vi har haft. Det endelige logo er symmetrisk hele vejen rundt. ",
           src: require("../assets/images/logodesignprocess.png"),
-          readMoreUrl: "hej",
+          readMoreUrl: "",
         },
       ],
     };
