@@ -30,11 +30,11 @@ export default {
           title: ""
         },
         {
-          src: require("../assets/images/test1.png"),
+          src: require("../assets/images/test2.png"),
           title: ""
         },
         {
-          src: require("../assets/images/test1.png"),
+          src: require("../assets/images/test3.png"),
           title: ""
         }
       ]

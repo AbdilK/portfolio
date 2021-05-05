@@ -59,7 +59,7 @@ export default {
           description:
             "Ved siden af informations siden til første semester eksamen, skulle vi aflevere en rapport samt designmanual. Rapporten blev rigtig pæn, med et innovativt design. ",
           src: require("../assets/images/designManual.jpg"),
-          readMoreUrl: "../images/designManual.jpg",
+          readMoreUrl: "",
         },
         {
           id: 3,
@@ -72,29 +72,29 @@ export default {
         },
         {
           id: 4,
-          title: "20 movies not to miss in 2020",
-          subtitle: "3,000 miles of wonder",
+          title: "Sixth Car Rental",
+          subtitle: "XD Prototype",
           description:
-            "Aliquam albucius mei ei, debitis torquatos et pro, eos natum scribentur no. Putant verear constituto te qui. Adolescens persequeris vim ei. Vel nullam reprimique te.",
-          src: require("../assets/images/placeholder.png"),
-          readMoreUrl: "hej",
+            "XD Prototype af en biludlejningshjemmeside, som er fuldt funktionel med sidehenvisninger som fx. når man surfer rundt på siden.",
+          src: require("../assets/images/rentalcars.png"),
+          readMoreUrl: "",
         },
         {
           id: 5,
-          title: "20 movies not to miss in 2020",
-          subtitle: "3,000 miles of wonder",
+          title: "No way out",
+          subtitle: "8 minutters kortfilm",
           description:
-            "Aliquam albucius mei ei, debitis torquatos et pro, eos natum scribentur no. Putant verear constituto te qui. Adolescens persequeris vim ei. Vel nullam reprimique te.",
-          src: require("../assets/images/placeholder.png"),
-          readMoreUrl: "hej",
+            "På tredje semester skulle vi lave en kortfilm, hvor vi skulle benytte os af alle de ting vi har lært i AV - Productions faget. Kortfilmen blev til en gyser/thriller på 8 minutter.",
+          src: require("../assets/images/kortfilm.png"),
+          readMoreUrl: "https://www.youtube.com/watch?v=JEt7sPA1r4M",
         },
         {
           id: 6,
-          title: "20 movies not to miss in 2020",
-          subtitle: "3,000 miles of wonder",
+          title: "OceanEye Logo Design",
+          subtitle: "Designprocessen",
           description:
-            "Aliquam albucius mei ei, debitis torquatos et pro, eos natum scribentur no. Putant verear constituto te qui. Adolescens persequeris vim ei. Vel nullam reprimique te.",
-          src: require("../assets/images/placeholder.png"),
+            "Ved udarbejdelsen af logo'et til vores første semester projekt, har vi været igennem en lang process. På billedet ses processen, hvilke overvejser vi har haft. Det endelige logo er symmetrisk hele vejen rundt. ",
+          src: require("../assets/images/logodesignprocess.png"),
           readMoreUrl: "hej",
         },
       ],
