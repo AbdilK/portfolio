@@ -2,28 +2,57 @@
   <v-content>
     <div class="staticHero">
       <v-img src="../assets/images/img14.jpg">
-      <v-row align="end" class="lightbox white--text pa-2 fill-height">
-        <v-col>
-          <v-container>
-            <div class="headline">Contact Us</div>
-          </v-container>
-        </v-col>
-      </v-row>
-    </v-img>
+        <v-row align="end" class="lightbox white--text pa-2 fill-height">
+        </v-row>
+      </v-img>
     </div>
     <div class="block">
-      <v-container>
-        <v-form ref="form" v-model="valid" lazy-validation>
-          <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Name" required></v-text-field>
-          <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
-          <v-textarea v-model="message" :rules="messageRules" label="Message" required></v-textarea>
-          <v-btn :disabled="!valid" color="success" class="mr-4" @click="validate">Submit</v-btn>
-          <v-btn color="error" class="mr-4" @click="reset">Reset</v-btn>
-        </v-form>
-      </v-container>
+      <div class="block">
+        <v-container>
+          <h2 class="text-center">Kontakt</h2>
+          <h3 class="text-center">
+            Synes du, at mit arbejder ser spændende ud, og har du brug for en
+            ung frisk gut som mig? <br />
+            Tøv ikke, kontakt mig endelig for, at få et uforpligtende tilbud!
+            <br />
+            Ring på nedenstående telefon nummer, eller smid mig en besked over
+            mail. <br /><br />
+          </h3>
+          <v-row>
+            <v-col
+              v-for="contacts in contacts"
+              :key="contacts.id"
+              class="d-flex child-flex"
+              cols="12"
+              sm="4"
+            >
+              <v-card flat tile class="mx-auto amber accent-3">
+                <v-card-text class="text--primary text-center">
+                  <div class="title">{{ contacts.name }}</div>
+                  <h4>{{ contacts.title }}</h4>
+                  <h4>{{ contacts.titles }}</h4>
+                </v-card-text>
+                <v-card-actions>
+                  <v-btn
+                    color="black"
+                    text
+                    :href="contacts.readMoreUrl"
+                    target="_blank"
+                    >Læs mere</v-btn
+                  >
+                </v-card-actions>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
+      </div>
     </div>
     <div class="googlemap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16705.802661855836!2d-0.14290489950731525!3d51.50711704027593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1577041400110!5m2!1sen!2suk" width="100%" height="450"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2260.563738484516!2d8.44472211592027!3d55.48770118048331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b20de0dc1b019%3A0xf131cc5b28fe1f27!2sErhvervsakademi%20SydVest!5e0!3m2!1sda!2sdk!4v1620216100927!5m2!1sda!2sdk"
+        width="100%"
+        height="450"
+      ></iframe>
     </div>
   </v-content>
 </template>
@@ -32,33 +61,29 @@
 export default {
   name: "Contact",
   data: () => ({
-    valid: true,
-    name: "",
-    nameRules: [
-      v => !!v || "Name is required",
-      v => (v && v.length <= 10) || "Name must be less than 10 characters"
-    ],
-    email: "",
-    emailRules: [
-      v => !!v || "E-mail is required",
-      v => /.+@.+\..+/.test(v) || "E-mail must be valid"
-    ],
-    message: "",
-    messageRules: [
-      v => !!v || "Message is required",
-      v => (v && v.length >= 10) || "Message must be more than 10 characters"
+    contacts: [
+      {
+        id: 1,
+
+        name: "ADDRESSE",
+        title: "Spangsbjerg Kirkevej 103, 6700 Esbjerg",
+        readMoreUrl:
+          "https://www.google.com/maps/place/Erhvervsakademi+SydVest/@55.4877012,8.4469108,15z/data=!4m2!3m1!1s0x0:0xf131cc5b28fe1f27?sa=X&amp;ved=2ahUKEwjA4urJps3tAhXlo4sKHdEbCZYQ_BIwDXoECBsQBQ",
+      },
+      {
+        id: 2,
+        name: "TELEFON",
+        title: "+45 42 22 76 XX",
+        readMoreUrl: "tel:+4542227612",
+      },
+      {
+        id: 3,
+
+        name: "E-MAIL",
+        title: "ak@akoycu.dk",
+        readMoreUrl: "mailto:AK@akoycu.dk",
+      },
     ],
   }),
-
-  methods: {
-    validate() {
-      if (this.$refs.form.validate()) {
-        this.snackbar = true;
-      }
-    },
-    reset() {
-      this.$refs.form.reset();
-    }
-  }
 };
 </script>

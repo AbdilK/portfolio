@@ -15,16 +15,12 @@
           </v-btn>
         </v-card-text>
 
-        <v-card-text class="amber--text pt-0">
-          © 2021 Alle rettigheder forbeholdes ABDIL KOYCU
-          <br>
-          _________________________________________________________________________________________________________________________________________________________________
-        </v-card-text>
+      
 
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong>Abdil Koycu's portfolio</strong>
+         © {{ new Date().getFullYear() }} — Alle rettigheder forbeholdes. Kopiering fra elementer og opgaver må kun finde sted på institutioner eller virksomheder, der har indgået aftale med <strong>ABDIL KÖYCÜ</strong>, og kun inden for de rammer, der er nævnt i aftalen. Undtaget herfra er korte uddrag til anmeldelse.
         </v-card-text>
       </v-card>
       

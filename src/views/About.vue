@@ -37,10 +37,12 @@
     </div>
     <div class="block">
       <v-container class="text-center">
-        <p>
+        <h2 class="text-center" >Curriculum Vitae Video</h2>
+        <h3>
           Mit navn er Abdil Koycu. Jeg er 25 år gammel og bor i Oksbøl. <br> Til dagligt læser jeg til Multimediedesigner på Erhvervsakademiet SydVest.
           <br> Se mere i videoen herunder:
-        </p>
+          <br>
+        </h3>
         <div class="text-center">
           <youtube
             :video-id="videoId"
@@ -55,27 +57,7 @@
     </div>
 
 
-    <div class="block">
-      <v-container>
-        <h2 class="text-center">Kontakt</h2>
-        <v-row>
-          <v-col v-for="contacts in contacts" :key="contacts.id" class="d-flex child-flex " cols="" sm="4"  >
-            <v-card flat tile class="mx-auto amber accent-3 "  >
-              <v-card-text class="text--primary text-center ">
-                <div class="title">{{ contacts.name }}</div>
-                <h4>{{ contacts.title }}</h4>
-                <h4>{{ contacts.titles }}</h4>
-              </v-card-text>
-              <v-card-actions>
-              <v-btn color="black" text :href="contacts.readMoreUrl" target="_blank"
-                >Læs mere</v-btn
-              >
-            </v-card-actions>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
+    
 
     
 

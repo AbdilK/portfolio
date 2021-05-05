@@ -36,7 +36,9 @@
             </v-card-actions>
           </v-card>
         </v-col>
+        
       </v-row>
+      <h3 class="text-center" >Siden bliver løbende opdateret med nye spændende projekter.</h3>
     </v-container>
   </div>
 </template>
