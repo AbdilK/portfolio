@@ -9,9 +9,9 @@
             class="mx-4 white--text"
             icon
           >
-            <v-icon size="24px">
-              {{ icon }}
-            </v-icon>
+          <a :href="`#${icon.link}`" target="_blank">
+           <v-icon size="24px">{{ icon.icon }}</v-icon>
+          </a>
           </v-btn>
         </v-card-text>
 
@@ -35,11 +35,12 @@ export default {
   name: "Footer",
 
   data: () => ({
+      
       icons: [
-        'mdi-facebook',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
+      {icon:'mdi-facebook', link:'https://www.facebook.com/user'},
+      {icon:'mdi-linkedin', link:'https://www.linkedin.com/in/user/'},
+      {icon:'mdi-instagram', link:'https://www.instagram.com/abdilk/'},
+    ],
     }),
   }
 </script>

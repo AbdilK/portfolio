@@ -44,7 +44,7 @@
           
           <br>
         </h3>
-        <div class="text-center">
+        <div cols="12" md="4" class="text-center">
           <youtube
             :video-id="videoId"
             ref="youtube"
