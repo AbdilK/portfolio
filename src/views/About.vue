@@ -41,6 +41,7 @@
         <h3>
           Mit navn er Abdil Koycu. Jeg er 25 år gammel og bor i Oksbøl. <br> Til dagligt læser jeg til Multimediedesigner på Erhvervsakademiet SydVest.
           <br> Se mere i videoen herunder:
+          
           <br>
         </h3>
         <div class="text-center">

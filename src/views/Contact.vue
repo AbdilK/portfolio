@@ -11,7 +11,7 @@
         <v-container>
           <h2 class="text-center">Kontakt</h2>
           <h3 class="text-center">
-            Synes du, at mit arbejder ser spændende ud, og har du brug for en
+            Synes du, at mit arbejde ser spændende ud, og har du brug for en
             ung frisk gut som mig? <br />
             Tøv ikke, kontakt mig endelig for, at få et uforpligtende tilbud!
             <br />
@@ -32,15 +32,7 @@
                   <h4>{{ contacts.title }}</h4>
                   <h4>{{ contacts.titles }}</h4>
                 </v-card-text>
-                <v-card-actions>
-                  <v-btn
-                    color="black"
-                    text
-                    :href="contacts.readMoreUrl"
-                    target="_blank"
-                    >Læs mere</v-btn
-                  >
-                </v-card-actions>
+                
               </v-card>
             </v-col>
           </v-row>
@@ -67,22 +59,18 @@ export default {
 
         name: "ADDRESSE",
         title: "Spangsbjerg Kirkevej 103, 6700 Esbjerg",
-        readMoreUrl:
-          "https://www.google.com/maps/place/Erhvervsakademi+SydVest/@55.4877012,8.4469108,15z/data=!4m2!3m1!1s0x0:0xf131cc5b28fe1f27?sa=X&amp;ved=2ahUKEwjA4urJps3tAhXlo4sKHdEbCZYQ_BIwDXoECBsQBQ",
-      },
+        },
       {
         id: 2,
         name: "TELEFON",
         title: "+45 42 22 76 XX",
-        readMoreUrl: "tel:+4542227612",
-      },
+        },
       {
         id: 3,
 
         name: "E-MAIL",
         title: "ak@akoycu.dk",
-        readMoreUrl: "mailto:AK@akoycu.dk",
-      },
+        },
     ],
   }),
 };
