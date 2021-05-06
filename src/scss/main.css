@@ -228,7 +228,7 @@ header .v-toolbar__title {
 }
 
 .v-toolbar__content {
-  background-color: #F4B647;
+  background-color: #FFC400;
 }
 
 .mainHeader .v-toolbar__items .v-btn__content a {
@@ -257,19 +257,18 @@ header .v-toolbar__title {
   }
 }
 
-.imageSlide {
+.heroBlock {
   position: relative;
 }
 
 @media only screen and (max-width: 599px) {
-  .imageSlide .v-window {
+  .heroBlock .v-window {
     height: 220px !important;
   }
 }
 
-.imageSlide .v-image__image:before {
+.heroBlock .v-image__image:before {
   content: '';
-  background: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -278,18 +277,18 @@ header .v-toolbar__title {
   z-index: 1;
 }
 
-.imageSlide .title {
+.heroBlock .title {
   color: #fff;
   position: relative;
   z-index: 2;
   font: 300 50px/1.6 "Montserrat", "Arial", sans-serif !important;
 }
 
-.imagePorjects {
+.imageProjects {
   background: #fafafa;
 }
 
-.imagePorjects .v-card__title {
+.imageProjects .v-card__title {
   background: rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=main.css.map */
