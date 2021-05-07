@@ -7,7 +7,6 @@
       </v-img>
     </div>
     <div class="section">
-      <div class="section">
         <v-container>
           <h2 class="text-center">Kontakt</h2>
           <h3 class="text-center">
@@ -39,7 +38,6 @@
             </v-col>
           </v-row>
         </v-container>
-      </div>
     </div>
     <div class="googlemap">
       <iframe
