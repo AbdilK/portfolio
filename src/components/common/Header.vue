@@ -1,7 +1,11 @@
 <template>
   <v-container>
     <v-toolbar flat class="mainHeader">
-      <img class="navbar-logo" src="../../assets/images/newL.png" alt="AK LOGO">
+      <img
+        class="navbar-logo"
+        src="../../assets/images/newL.png"
+        alt="AK LOGO"
+      />
       <v-toolbar-title>ABDIL KOYCU</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
@@ -16,13 +20,21 @@
           </template>
           <v-list class="responsiveMenu">
             <v-list-item>
-              <v-list-item-title><router-link to="/">Home</router-link></v-list-item-title>
+              <v-list-item-title
+                ><router-link to="/">Home</router-link></v-list-item-title
+              >
             </v-list-item>
             <v-list-item>
-              <v-list-item-title><router-link to="/about">About</router-link></v-list-item-title>
+              <v-list-item-title
+                ><router-link to="/about">About</router-link></v-list-item-title
+              >
             </v-list-item>
             <v-list-item>
-              <v-list-item-title><router-link to="/contact">Contact</router-link></v-list-item-title>
+              <v-list-item-title
+                ><router-link to="/contact"
+                  >Contact</router-link
+                ></v-list-item-title
+              >
             </v-list-item>
           </v-list>
         </v-menu>
@@ -34,7 +46,6 @@
 <script>
 export default {
   name: "Header",
-  data: () => ({
-  })
+  data: () => ({}),
 };
 </script>

@@ -1,14 +1,17 @@
 <template>
-  <div class="block latestPostBlock">
+  <div class="section myProjects">
     <v-container>
       <h2 class="text-center">Projects</h2>
-      <h3 class="text-center" >Vil du gerne se mere af mine projekter?<br> 
-      Jeg har samlet nogle af de bedste projekter, som jeg har arbejdet på under uddannelsen. 
-      <br>
-      Alt fra hjemmesider og logo design processer til video & kortfilm produktion.</h3>
-      <br>
+      <h3 class="text-center">
+        Vil du gerne se mere af mine projekter?<br />
+        Jeg har samlet nogle af de bedste projekter, som jeg har arbejdet på
+        under uddannelsen.
+        <br />
+        Alt fra hjemmesider og logo design processer til video & kortfilm
+        produktion.
+      </h3>
+      <br />
       <v-row>
-        
         <v-col cols="12" md="4" v-for="item in items" :key="item.id">
           <v-card
             outlined
@@ -36,9 +39,10 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        
       </v-row>
-      <h3 class="text-center" >Siden bliver løbende opdateret med nye spændende projekter.</h3>
+      <h3 class="text-center">
+        Siden bliver løbende opdateret med nye spændende projekter.
+      </h3>
     </v-container>
   </div>
 </template>
@@ -57,7 +61,7 @@ export default {
           description:
             "I forbindelse med første semester eksamen, udviklede jeg en hjemmeside baseret på ren HTML, CSS og JS. Hjemmeside er en informations side, hvor der er mulighed for at lave en donation.",
           src: require("../assets/images/oceanEye.png"),
-          readMoreUrl: "http://www.akoycu.dk",
+          readMoreUrl: "http://www.akoycu.dk/oceaneyes",
         },
         {
           id: 2,
@@ -69,7 +73,6 @@ export default {
           readMoreUrl: "https://www.youtube.com/watch?v=JEt7sPA1r4M",
         },
 
-        
         {
           id: 3,
           title: "Timeline Museum Logo contest",
@@ -77,7 +80,7 @@ export default {
           description:
             "På andet semester, fik vi en opgave, hvor vi skulle designe et logo til en mobilapplikation. Denne app skulle være til et museum, hvor folk kan læse om historiske begivenheder, baseret på en tidslinje. Mit design vandt konkurrencen",
           src: require("../assets/images/LogoContest.png"),
-          readMoreUrl: "hej",
+          readMoreUrl: "../assets/images/LogoContest.png",
         },
         {
           id: 4,

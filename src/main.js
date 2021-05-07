@@ -23,7 +23,7 @@ const router = new VueRouter({
     { path: '/contact', component: Contact },
     { path: '*', component: NotFound }
   ],
-  mode: 'hash'
+  mode: 'history'
 })
 
 new Vue({

@@ -1,10 +1,13 @@
 <template>
   <v-content>
     <v-container>
-      <div class="block text-center notFound">
+      <div class="section text-center notFound">
         <h2>Page not found</h2>
         <i class="fas fa-exclamation-triangle red--text"></i>
-        <p>Beklager, men denne side findes ikke. Kontakt mig, også finder vi en løsning på dette..</p>
+        <p>
+          Beklager, men denne side findes ikke. Kontakt mig, også finder vi en
+          løsning på dette..
+        </p>
       </div>
     </v-container>
   </v-content>
@@ -16,8 +19,8 @@ export default {
 
   data() {
     return {
-      items: []
+      items: [],
     };
-  }
+  },
 };
 </script>

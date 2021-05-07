@@ -3,9 +3,7 @@
     <v-app-bar flat max-height="65">
       <Header />
     </v-app-bar>
-
     <router-view></router-view>
-
     <v-footer>
       <Footer />
     </v-footer>
@@ -21,11 +19,11 @@ export default {
 
   components: {
     Header,
-    Footer
+    Footer,
   },
 
   data: () => ({
     //
-  })
+  }),
 };
 </script>

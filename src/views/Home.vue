@@ -1,19 +1,17 @@
 <template>
   <v-content>
-
     <mySlide />
     <myStory />
-    <myPhotos />
     <myProjects />
+    <myPhotos />
   </v-content>
 </template>
 
 <script>
-
 import mySlide from "../components/mySlide";
 import myStory from "../components/myStory";
-import myPhotos from "../components/myPhotos";
 import myProjects from "../components/myProjects";
+import myPhotos from "../components/myPhotos";
 
 export default {
   name: "Home",
@@ -21,8 +19,8 @@ export default {
   components: {
     mySlide,
     myStory,
+    myProjects,
     myPhotos,
-    myProjects
-  }
+  },
 };
 </script>

@@ -56,12 +56,16 @@ ul {
     
 }
 
-
+/*a.removeblue {
+  text-decoration: none !important;
+}
+*/
 a {
   color: $base-link-color;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: color $animation-speed ease;
   color: inherit;
+  
 
   &:hover {
     text-decoration: none;

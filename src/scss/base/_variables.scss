@@ -6,7 +6,6 @@ $base-font-serif: 'Times New Roman', 'Georgia', serif;
 
 $primary-font: $base-font-sans-serif;
 
-// Body
 $base-text-color: $black  !default;
 $base-background-color: $white !default;
 $base-font-size: 14px !default;
@@ -17,10 +16,8 @@ $vertical-rhythm: ($base-line-height * 1em);
 
 $base-min-width: 320px;
 
-// Liks
 $base-link-color: $black;
 
-// Headers
 $h1-font-size: 24px !default;
 $h2-font-size: 20px !default;
 $h3-font-size: 21px !default;

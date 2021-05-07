@@ -1,6 +1,6 @@
 <template>
   <v-content>
-    <div class="staticHero">
+    <div class="static about">
       <v-img src="../assets/images/aboutme.png">
         <v-row align="end" class="lightbox white--text pa-2 fill-height">
           <v-col>
@@ -12,7 +12,7 @@
       </v-img>
     </div>
 
-    <div class="block">
+    <div class="section">
       <v-container>
         <h2 class="text-center">Abdil Köycü</h2>
         <v-row>
@@ -40,7 +40,7 @@
         </v-row>
       </v-container>
     </div>
-    <div class="block">
+    <div class="section">
       <v-container class="text-center">
         <h2 class="text-center">Curriculum Vitae Video</h2>
         <h3>
@@ -113,7 +113,7 @@ export default {
           id: 3,
 
           name: "MAIL",
-          title: "ak@akoycu.dk",
+          title: "abdil@akoycu.dk",
           readMoreUrl: "mailto:AK@akoycu.dk",
         },
       ],

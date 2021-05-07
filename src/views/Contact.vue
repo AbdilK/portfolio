@@ -1,22 +1,25 @@
 <template>
   <v-content>
-    <div class="staticHero">
-      <v-img src="../assets/images/img14.jpg">
+    <div class="static contact">
+      <v-img src="../assets/images/contact.png">
         <v-row align="end" class="lightbox white--text pa-2 fill-height">
         </v-row>
       </v-img>
     </div>
-    <div class="block">
-      <div class="block">
+    <div class="section">
+      <div class="section">
         <v-container>
           <h2 class="text-center">Kontakt</h2>
           <h3 class="text-center">
-            Synes du, at mit arbejde ser spændende ud, og har du brug for en
-            ung frisk gut som mig? <br />
+            Synes du, at mit arbejde ser spændende ud, og har du brug for en ung
+            frisk gut som mig? <br />
             Tøv ikke, kontakt mig endelig for, at få et uforpligtende tilbud!
             <br />
             Ring på nedenstående telefon nummer, eller smid mig en besked over
             mail. <br /><br />
+            Ser frem til at høre fra dig!
+            <br />
+            <br />
           </h3>
           <v-row>
             <v-col
@@ -32,7 +35,6 @@
                   <h4>{{ contacts.title }}</h4>
                   <h4>{{ contacts.titles }}</h4>
                 </v-card-text>
-                
               </v-card>
             </v-col>
           </v-row>
@@ -59,18 +61,18 @@ export default {
 
         name: "ADDRESSE",
         title: "Spangsbjerg Kirkevej 103, 6700 Esbjerg",
-        },
+      },
       {
         id: 2,
         name: "TELEFON",
-        title: "+45 42 22 76 XX",
-        },
+        title: "+45 42 22 76 12",
+      },
       {
         id: 3,
 
         name: "E-MAIL",
         title: "ak@akoycu.dk",
-        },
+      },
     ],
   }),
 };
