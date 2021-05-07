@@ -9,7 +9,7 @@
             class="mx-4 white--text"
             icon
           >
-            <a class="removeblue" :href="`#${icon.link}`" target="_blank">
+            <a class="amber--text" :href="icon.link" target="_blank">
               <v-icon size="24px">{{ icon.icon }}</v-icon>
             </a>
           </v-btn>
@@ -36,7 +36,10 @@ export default {
   data: () => ({
     icons: [
       { icon: "mdi-facebook", link: "https://www.facebook.com/abdil95/" },
-      { icon: "mdi-linkedin", link: "https://www.linkedin.com/in/user/" },
+      {
+        icon: "mdi-linkedin",
+        link: "https://www.linkedin.com/in/abdil-koycu-a72ba21b2/",
+      },
       { icon: "mdi-instagram", link: "https://www.instagram.com/abdilk/" },
     ],
   }),

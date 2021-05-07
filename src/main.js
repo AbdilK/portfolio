@@ -2,14 +2,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import VueRouter from 'vue-router'
-import VueYoutube from 'vue-youtube'
+
 
 import Home from './views/Home';
 import About from './views/About';
 import Contact from './views/Contact';
 import NotFound from './views/NotFound';
 
-Vue.use(VueYoutube)
+
 Vue.use(VueRouter)
 
 import './scss/main.scss';

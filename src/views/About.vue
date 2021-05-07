@@ -31,7 +31,7 @@
               ></v-img>
               <v-card-text class="text--primary text-center">
                 <div class="title">{{ item.name }}</div>
-                <a :href="item.URLLink">
+                <a :href="item.URLLink" target="_blank"> 
                   <h4>{{ item.title }}</h4></a
                 >
               </v-card-text>
@@ -52,14 +52,12 @@
           <br />
         </h3>
         <div class="video-container">
-          <div cols="12" md="4" class="text-center">
-            <youtube
-              :video-id="videoId"
-              ref="youtube"
-              @playing="playing"
-              float="center"
-            ></youtube>
-          </div>
+          <iframe class="ytVid"
+            src="https://www.youtube.com/embed/WP3G9NPXmNM"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </v-container>
     </div>
@@ -71,27 +69,26 @@ export default {
   name: "About",
   data() {
     return {
-      videoId: "WP3G9NPXmNM",
       items: [
         {
           id: 1,
           src: require("../assets/images/BusinessCard.png"),
           name: "Business Kort Design",
           title: "Klik her for at downloade",
-          URLLink: "../assets/images/BusinessCard.png",
+          URLLink: "/files/BusinessCard.png",
         },
         {
-          id: 1,
+          id: 2,
           src: require("../assets/images/abdilme.png"),
           name: "Abdil Koycu",
           titles: "Multimediedesigner",
         },
         {
-          id: 1,
+          id: 3,
           src: require("../assets/images/CV.png"),
           name: "Curriculum Vitae (CV)",
           title: "Klik her for at downloade",
-          URLLink: "../assets/images/AbdilCV.pdf",
+          URLLink: "/files/AbdilCV.pdf",
         },
       ],
       contacts: [
