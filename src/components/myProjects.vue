@@ -70,7 +70,7 @@ export default {
           description:
             "På tredje semester skulle vi lave en kortfilm, hvor vi skulle benytte os af alle de ting vi har lært i AV - Productions faget. Kortfilmen blev til en gyser/thriller på 8 minutter.",
           src: require("../assets/images/kortfilm.png"),
-          readMoreUrl: "https://www.youtube.com/watch?v=JEt7sPA1r4M",
+          readMoreUrl: "https://www.youtube.com/watch?v=TghjVKOoKD0",
         },
 
         {
